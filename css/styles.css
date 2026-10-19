@@ -50,6 +50,35 @@ p {
     margin: 0.3em 0;
 }
 
+/* Navigation
+------------------------------------*/
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px 20px;
+    background: #0E0E12;
+    border-bottom: 3px solid #F6C945;
+}
+
+.navbar a {
+    color: #FFF6DC;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 4px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.navbar a:hover {
+    background: #E8438E;
+    color: #FFF6DC;
+}
+
 /* Reusable content wrapper */
 .content-wrap {
     max-width: 950px;
@@ -173,7 +202,19 @@ p {
 /* Work Experience
 ------------------------------------*/
 .work-experience {
-    background: #2A2438;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(14, 14, 18, 0.92),
+            rgba(42, 36, 56, 0.78),
+            rgba(232, 67, 142, 0.35)
+        ),
+        url("../images/work-experience-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
     color: #FFF6DC;
 }
 
