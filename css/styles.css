@@ -147,8 +147,8 @@ p {
 .footer a {
     color: #F6C945;
     font-weight: 600;
+    text-decoration: none;
 }
-
 .footer a:hover {
     color: #E8438E;
 }
