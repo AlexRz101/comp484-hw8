@@ -212,7 +212,7 @@ p {
 
     background-size: cover;
     background-position: center 20%;
-    background-attachment: scroll;
+    background-attachment: fixed;
 
     color: #FFF6DC;
 }
@@ -239,5 +239,11 @@ p {
 
     h1 {
         font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .work-experience {
+        background-attachment: scroll;
     }
 }
